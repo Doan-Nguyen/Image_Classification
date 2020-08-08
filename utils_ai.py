@@ -31,7 +31,7 @@ def build_network(archi = 'squeezenet', use_gpu=False, num_classes=global_settin
 
     if archi == 'vgg16':
         from models.vgg import vgg16_bn
-        net = vgg16_bn(num_classes=num_classes)
+        net = vgg16_bn()
     ### custom network start here
     elif archi == 'shallow_squeezenet':
         from models.shallow_squeezenet import shallow_squeezenet
@@ -49,7 +49,7 @@ def build_network(archi = 'squeezenet', use_gpu=False, num_classes=global_settin
         net = vgg11_bn(num_classes=num_classes)
     elif archi == 'vgg19':
         from models.vgg import vgg19_bn
-        net = vgg19_bn(num_classes=num_classes)
+        net = vgg19_bn()
     elif archi == 'densenet121':
         from models.densenet import densenet121
         net = densenet121(num_classes=num_classes)

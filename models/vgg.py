@@ -19,24 +19,41 @@ cfg = {
 }
 
 class VGG(nn.Module):
-
+    """
+    - nn.Linear(in_features: int, out_features: int, bias: bool = True)
+    """
     def __init__(self, features, num_class=100):
         super().__init__()
         self.features = features
 
+        # self.classifier = nn.Sequential(
+        #     nn.Linear(512, 4096),
+        #     nn.ReLU(inplace=True),
+        #     nn.Dropout(),
+        #     nn.Linear(4096, 4096),
+        #     nn.ReLU(inplace=True),
+        #     nn.Dropout(),
+        #     nn.Linear(4096, num_class)
+        # )
+
+        ### With cifar-100 (32*32*3 = 3072)
         self.classifier = nn.Sequential(
-            nn.Linear(512, 4096),
+            nn.Linear(48, 37632), 
             nn.ReLU(inplace=True),
             nn.Dropout(),
-            nn.Linear(4096, 4096),
+            nn.Linear(37632, 37632),
             nn.ReLU(inplace=True),
             nn.Dropout(),
-            nn.Linear(4096, num_class)
+            nn.Linear(37632, num_class)
         )
 
     def forward(self, x):
-        output = self.features(x)
-        output = output.view(output.size()[0], -1)
+        print("X: {}".format(x.shape))
+        x = x.view(1, -1)
+        output = self.features(x) # [batch_size, ]
+        print("Output 1: {} ".format(output.shape))
+        output = output.view(output.size()[0], -1)  # ()
+        print("Output 2: {} ".format(output.shape))
         output = self.classifier(output)
     
         return output
@@ -60,16 +77,16 @@ def make_layers(cfg, batch_norm=False):
     
     return nn.Sequential(*layers)
 
-def vgg11_bn(num_classes):
+def vgg11_bn():
     return VGG(make_layers(cfg['A'], batch_norm=True))
 
-def vgg13_bn(num_classes):
+def vgg13_bn():
     return VGG(make_layers(cfg['B'], batch_norm=True))
 
-def vgg16_bn(num_classes):
+def vgg16_bn():
     return VGG(make_layers(cfg['D'], batch_norm=True))
 
-def vgg19_bn(num_classes):
+def vgg19_bn():
     return VGG(make_layers(cfg['E'], batch_norm=True))
 
 
