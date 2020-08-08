@@ -37,24 +37,24 @@ class VGG(nn.Module):
         # )
 
         ### With cifar-100 (32*32*3 = 3072)
-        self.classifier = nn.Sequential(
-            nn.Linear(48, 4608), 
+        self.classifier = nn.Sequential(  # m2
+            nn.Linear(37632, 3072), 
             nn.ReLU(inplace=True),
             nn.Dropout(),
-            nn.Linear(4608, 4608),
+            nn.Linear(3072, 3072),
             nn.ReLU(inplace=True),
             nn.Dropout(),
-            nn.Linear(4608, num_class)
+            nn.Linear(3072, num_class)
         )
 
     def forward(self, x):
-        print("X: {}".format(x.shape))
-        # x = x.view(x.size(0), -1)
-        output = self.features(x) # [batch_size, ]
+        # print("X: {}".format(x.shape))
+        y = x.view(x.size(0), -1)
+        print(y.shape)
+        output = self.features(x) # [batch_size, D, W, H]
         print("Output 1: {} ".format(output.shape))
         output = output.view(output.size()[0], -1)  # ()
         print("Output 2: {} ".format(output.shape))
-        # x = x.view(output.size(0), -1)
         output = self.classifier(output)
     
         return output
