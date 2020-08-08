@@ -49,7 +49,7 @@ class VGG(nn.Module):
 
     def forward(self, x):
         print("X: {}".format(x.shape))
-        output = output.unsqueeze_(2)
+        x = x.unsqueeze_(2)
         output = self.features(x) # [batch_size, ]
         print("Output 1: {} ".format(output.shape))
         output = output.view(output.size()[0], -1)  # ()
