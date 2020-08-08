@@ -49,11 +49,10 @@ class VGG(nn.Module):
 
     def forward(self, x):
         print("X: {}".format(x.shape))
-        # x = x.view(-1, )
+        output = output.unsqueeze_(2)
         output = self.features(x) # [batch_size, ]
         print("Output 1: {} ".format(output.shape))
         output = output.view(output.size()[0], -1)  # ()
-        output = output.unsqueeze_(2)
         print("Output 2: {} ".format(output.shape))
         output = self.classifier(output)
     
