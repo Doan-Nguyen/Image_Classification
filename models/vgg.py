@@ -38,13 +38,13 @@ class VGG(nn.Module):
 
         ### With cifar-100 (32*32*3 = 3072)
         self.classifier = nn.Sequential(
-            nn.Linear(48, 3072), 
+            nn.Linear(48, 4608), 
             nn.ReLU(inplace=True),
             nn.Dropout(),
-            nn.Linear(3072, 3072),
+            nn.Linear(4608, 4608),
             nn.ReLU(inplace=True),
             nn.Dropout(),
-            nn.Linear(3072, num_class)
+            nn.Linear(4608, num_class)
         )
 
     def forward(self, x):
