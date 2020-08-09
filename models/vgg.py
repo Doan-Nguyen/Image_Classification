@@ -38,7 +38,7 @@ class VGG(nn.Module):
 
         ### With cifar-100 (32*32*3 = 3072)
         self.classifier = nn.Sequential(  # m2
-            nn.Linear(512*7*7, 4096), 
+            nn.Linear(4608, 4096), 
             nn.ReLU(inplace=True),
             nn.Dropout(),
             nn.Linear(4096, 4096),
