@@ -17,7 +17,6 @@ DATASET_FOLDER_COLAB = "/content/drive/My Drive/Data_Backup/Image_classification
 TRAIN_FOLDER = os.path.join(DATASET_FOLDER_COLAB, "train")
 TEST_FOLDER = TRAIN_FOLDER = os.path.join(DATASET_FOLDER_COLAB, "test")
 
-# STANDARD_FOLDER = 
 
 ###             Model parameters
 
@@ -46,4 +45,4 @@ TIME_NOW = datetime.now().isoformat()
 LOG_DIR = 'runs'
 
 #save weights file per SAVE_EPOCH epoch
-SAVE_EPOCH = 50
+SAVE_EPOCH = 10
