@@ -94,7 +94,7 @@ def eval_training():
 if __name__ == '__main__':
     
     parser = argparse.ArgumentParser()
-    parser.add_argument('-net', default = 'vgg19', type=str, help='net type')
+    parser.add_argument('-net', default = 'vgg16', type=str, help='net type')
     parser.add_argument('-gpu', type=bool, default=True, help='use gpu or not')
     parser.add_argument('-w', type=int, default=4, help='number of workers for dataloader')
     parser.add_argument('-b', type=int, default=48, help='batch size for dataloader')
