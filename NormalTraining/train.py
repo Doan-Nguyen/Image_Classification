@@ -192,7 +192,7 @@ if __name__ == '__main__':
                 'optimizer_state_dict': optimizer.state_dict(),
                 'loss': loss_function
             }, checkpoint_path.format(net=args.net, epoch=epoch, type='best'))
-            best_acc = acc
-            logger.info("Saving at epoch: " + str(epoch) + " with accuracy: " +  str(acc))
+            best_acc = val_accuracy
+            logger.info("Saving at epoch: " + str(epoch) + " with accuracy: " +  str(val_accuracy))
 
     
