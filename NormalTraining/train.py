@@ -187,7 +187,7 @@ if __name__ == '__main__':
             # torch.save(net.state_dict(), 
             #     checkpoint_path.format(net=args.net, epoch=epoch, type='best'))
             torch.save({
-                'epoch':epochs,
+                'epoch':global_settings.EPOCH,
                 'model_state_dict': net.state_dict(),
                 'optimizer_state_dict': optimizer.state_dict(),
                 'loss': loss_function
