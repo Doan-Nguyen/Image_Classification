@@ -1,0 +1,268 @@
+2020-08-12 03:29:47,857 - __main__ - INFO - Training Epoch:             1 [48/10000]	             Loss: 4.6400	LR: 0.000239
+2020-08-12 03:29:48,457 - __main__ - INFO - Training Epoch:             1 [96/10000]	             Loss: 4.6421	LR: 0.000478
+2020-08-12 03:29:49,027 - __main__ - INFO - Training Epoch:             1 [144/10000]	             Loss: 4.6017	LR: 0.000718
+2020-08-12 03:29:49,617 - __main__ - INFO - Training Epoch:             1 [192/10000]	             Loss: 4.6293	LR: 0.000957
+2020-08-12 03:29:50,480 - __main__ - INFO - Training Epoch:             1 [240/10000]	             Loss: 4.5934	LR: 0.001196
+2020-08-12 03:29:51,077 - __main__ - INFO - Training Epoch:             1 [288/10000]	             Loss: 4.6344	LR: 0.001435
+2020-08-12 03:29:51,743 - __main__ - INFO - Training Epoch:             1 [336/10000]	             Loss: 4.5830	LR: 0.001675
+2020-08-12 03:29:52,358 - __main__ - INFO - Training Epoch:             1 [384/10000]	             Loss: 4.6116	LR: 0.001914
+2020-08-12 03:29:53,624 - __main__ - INFO - Training Epoch:             1 [432/10000]	             Loss: 4.6267	LR: 0.002153
+2020-08-12 03:29:54,249 - __main__ - INFO - Training Epoch:             1 [480/10000]	             Loss: 4.6522	LR: 0.002392
+2020-08-12 03:29:54,830 - __main__ - INFO - Training Epoch:             1 [528/10000]	             Loss: 4.6329	LR: 0.002632
+2020-08-12 03:29:55,398 - __main__ - INFO - Training Epoch:             1 [576/10000]	             Loss: 4.6053	LR: 0.002871
+2020-08-12 07:54:09,025 - __main__ - INFO - Training Epoch:             1 [48/10000]	             Loss: 4.6329	LR: 0.000239
+2020-08-12 07:54:09,582 - __main__ - INFO - Training Epoch:             1 [96/10000]	             Loss: 4.6387	LR: 0.000478
+2020-08-12 07:54:10,141 - __main__ - INFO - Training Epoch:             1 [144/10000]	             Loss: 4.6339	LR: 0.000718
+2020-08-12 07:54:10,699 - __main__ - INFO - Training Epoch:             1 [192/10000]	             Loss: 4.6294	LR: 0.000957
+2020-08-12 07:54:11,258 - __main__ - INFO - Training Epoch:             1 [240/10000]	             Loss: 4.6027	LR: 0.001196
+2020-08-12 07:54:11,821 - __main__ - INFO - Training Epoch:             1 [288/10000]	             Loss: 4.6329	LR: 0.001435
+2020-08-12 08:05:54,639 - __main__ - INFO - Training Epoch:             1 [48/10000]	             Loss: 4.6092	LR: 0.000239
+2020-08-12 08:05:55,199 - __main__ - INFO - Training Epoch:             1 [96/10000]	             Loss: 4.6420	LR: 0.000478
+2020-08-12 08:05:55,759 - __main__ - INFO - Training Epoch:             1 [144/10000]	             Loss: 4.7122	LR: 0.000718
+2020-08-12 08:05:56,320 - __main__ - INFO - Training Epoch:             1 [192/10000]	             Loss: 4.6897	LR: 0.000957
+2020-08-12 08:05:56,885 - __main__ - INFO - Training Epoch:             1 [240/10000]	             Loss: 4.6609	LR: 0.001196
+2020-08-12 08:05:57,446 - __main__ - INFO - Training Epoch:             1 [288/10000]	             Loss: 4.6111	LR: 0.001435
+2020-08-12 08:05:58,003 - __main__ - INFO - Training Epoch:             1 [336/10000]	             Loss: 4.6406	LR: 0.001675
+2020-08-12 08:46:53,563 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,563 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,563 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,563 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,563 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,563 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,563 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,563 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,563 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,564 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,565 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,566 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,567 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 08:46:53,568 - __main__ - INFO - {var_name} 	 {optimizer.state_dict()[var_name]}
+2020-08-12 08:46:53,568 - __main__ - INFO - {var_name} 	 {optimizer.state_dict()[var_name]}
+2020-08-12 08:46:56,686 - __main__ - INFO - Training Epoch:             1 [48/10000]	             Loss: 4.5810	LR: 0.000239
+2020-08-12 08:46:57,242 - __main__ - INFO - Training Epoch:             1 [96/10000]	             Loss: 4.6008	LR: 0.000478
+2020-08-12 08:46:57,794 - __main__ - INFO - Training Epoch:             1 [144/10000]	             Loss: 4.6390	LR: 0.000718
+2020-08-12 08:46:58,350 - __main__ - INFO - Training Epoch:             1 [192/10000]	             Loss: 4.6071	LR: 0.000957
+2020-08-12 08:46:58,911 - __main__ - INFO - Training Epoch:             1 [240/10000]	             Loss: 4.6052	LR: 0.001196
+2020-08-12 08:46:59,465 - __main__ - INFO - Training Epoch:             1 [288/10000]	             Loss: 4.6717	LR: 0.001435
+2020-08-12 08:47:00,023 - __main__ - INFO - Training Epoch:             1 [336/10000]	             Loss: 4.5971	LR: 0.001675
+2020-08-12 08:47:00,583 - __main__ - INFO - Training Epoch:             1 [384/10000]	             Loss: 4.6572	LR: 0.001914
+2020-08-12 09:26:02,762 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,762 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,762 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,763 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,764 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,765 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,766 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,767 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,767 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,767 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,767 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,767 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,767 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,767 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,767 - __main__ - INFO - Param tensor: {param_tensor} 	 {net.state_dict()[param_tensor].size()}
+2020-08-12 09:26:02,767 - __main__ - INFO - {var_name} 	 {optimizer.state_dict()[var_name]}
+2020-08-12 09:26:02,767 - __main__ - INFO - {var_name} 	 {optimizer.state_dict()[var_name]}
+2020-08-12 09:26:06,093 - __main__ - INFO - Training Epoch:             1 [48/10000]	             Loss: 4.6201	LR: 0.000239
+2020-08-12 09:26:06,687 - __main__ - INFO - Training Epoch:             1 [96/10000]	             Loss: 4.6781	LR: 0.000478
+2020-08-12 09:26:07,250 - __main__ - INFO - Training Epoch:             1 [144/10000]	             Loss: 4.6552	LR: 0.000718
+2020-08-12 09:26:07,808 - __main__ - INFO - Training Epoch:             1 [192/10000]	             Loss: 4.6366	LR: 0.000957
+2020-08-12 09:26:08,364 - __main__ - INFO - Training Epoch:             1 [240/10000]	             Loss: 4.6138	LR: 0.001196
+2020-08-12 09:26:08,926 - __main__ - INFO - Training Epoch:             1 [288/10000]	             Loss: 4.7272	LR: 0.001435
+2020-08-12 09:26:09,485 - __main__ - INFO - Training Epoch:             1 [336/10000]	             Loss: 4.6007	LR: 0.001675
+2020-08-12 09:26:10,040 - __main__ - INFO - Training Epoch:             1 [384/10000]	             Loss: 4.5977	LR: 0.001914
+2020-08-12 09:26:10,602 - __main__ - INFO - Training Epoch:             1 [432/10000]	             Loss: 4.6541	LR: 0.002153
+2020-08-12 09:26:11,159 - __main__ - INFO - Training Epoch:             1 [480/10000]	             Loss: 4.6474	LR: 0.002392
+2020-08-12 09:26:11,716 - __main__ - INFO - Training Epoch:             1 [528/10000]	             Loss: 4.5946	LR: 0.002632
+2020-08-12 09:26:12,273 - __main__ - INFO - Training Epoch:             1 [576/10000]	             Loss: 4.7009	LR: 0.002871
+2020-08-12 09:26:12,835 - __main__ - INFO - Training Epoch:             1 [624/10000]	             Loss: 4.6014	LR: 0.003110
+2020-08-12 09:26:13,391 - __main__ - INFO - Training Epoch:             1 [672/10000]	             Loss: 4.6522	LR: 0.003349
+2020-08-12 09:26:13,954 - __main__ - INFO - Training Epoch:             1 [720/10000]	             Loss: 4.5797	LR: 0.003589
+2020-08-12 09:26:14,512 - __main__ - INFO - Training Epoch:             1 [768/10000]	             Loss: 4.5722	LR: 0.003828
+2020-08-12 09:26:15,066 - __main__ - INFO - Training Epoch:             1 [816/10000]	             Loss: 4.6297	LR: 0.004067
+2020-08-12 09:26:15,621 - __main__ - INFO - Training Epoch:             1 [864/10000]	             Loss: 4.5905	LR: 0.004306
+2020-08-12 09:26:16,179 - __main__ - INFO - Training Epoch:             1 [912/10000]	             Loss: 4.5893	LR: 0.004545
+2020-08-12 09:26:16,731 - __main__ - INFO - Training Epoch:             1 [960/10000]	             Loss: 4.6235	LR: 0.004785
+2020-08-12 09:26:17,287 - __main__ - INFO - Training Epoch:             1 [1008/10000]	             Loss: 4.6323	LR: 0.005024
+2020-08-12 09:26:17,844 - __main__ - INFO - Training Epoch:             1 [1056/10000]	             Loss: 4.6273	LR: 0.005263
+2020-08-12 09:26:18,400 - __main__ - INFO - Training Epoch:             1 [1104/10000]	             Loss: 4.6473	LR: 0.005502
+2020-08-12 09:26:18,958 - __main__ - INFO - Training Epoch:             1 [1152/10000]	             Loss: 4.6898	LR: 0.005742
+2020-08-12 09:26:19,739 - __main__ - INFO - Training Epoch:             1 [1200/10000]	             Loss: 4.6169	LR: 0.005981
+2020-08-12 09:26:20,300 - __main__ - INFO - Training Epoch:             1 [1248/10000]	             Loss: 4.6113	LR: 0.006220
+2020-08-12 09:26:20,859 - __main__ - INFO - Training Epoch:             1 [1296/10000]	             Loss: 4.6190	LR: 0.006459
+2020-08-12 09:26:21,415 - __main__ - INFO - Training Epoch:             1 [1344/10000]	             Loss: 4.5590	LR: 0.006699
+2020-08-12 09:26:21,979 - __main__ - INFO - Training Epoch:             1 [1392/10000]	             Loss: 4.7578	LR: 0.006938
+2020-08-12 09:26:22,537 - __main__ - INFO - Training Epoch:             1 [1440/10000]	             Loss: 4.6771	LR: 0.007177
+2020-08-12 09:26:23,092 - __main__ - INFO - Training Epoch:             1 [1488/10000]	             Loss: 4.4712	LR: 0.007416
+2020-08-12 09:26:23,651 - __main__ - INFO - Training Epoch:             1 [1536/10000]	             Loss: 4.7058	LR: 0.007656
+2020-08-12 09:26:24,279 - __main__ - INFO - Training Epoch:             1 [1584/10000]	             Loss: 4.7373	LR: 0.007895
+2020-08-12 09:26:24,836 - __main__ - INFO - Training Epoch:             1 [1632/10000]	             Loss: 4.4678	LR: 0.008134
+2020-08-12 09:26:25,399 - __main__ - INFO - Training Epoch:             1 [1680/10000]	             Loss: 4.4469	LR: 0.008373
+2020-08-12 09:26:25,953 - __main__ - INFO - Training Epoch:             1 [1728/10000]	             Loss: 4.8092	LR: 0.008612
+2020-08-12 09:26:26,514 - __main__ - INFO - Training Epoch:             1 [1776/10000]	             Loss: 4.7486	LR: 0.008852
