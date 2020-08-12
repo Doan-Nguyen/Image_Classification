@@ -100,22 +100,15 @@ def eval_training():
     return val_loss, val_accuracy
 
 def retrain(model_ft, optimizer):
-    model_ft , optimizer, epoch = load_checkpoint(model_ft, optimizer, global_settings.CHECKPOINT_TRANSFER)
-    model_ft = model_ft.to('cuda')
+    ###         Initiliaze the model
+    net.cuda()
+    optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9, weight_decay=5e-4)
 
-    print("model = ", model_ft)
-    print("optimizer = ", optimizer)
-    # print("start_epoch = ", start_epoch)
+    ###         Load checkpoint 
+    checkpoint = torch.load(global_settings.CHECKPOINT_TRANSFER)
+    net.load_state_dict(checkpoint['model_state_dict'])
+    optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
 
-    lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer,
-                                                step_size=5,
-                                                gamma=0.1) 
-
-    # now individually transfer the optimizer parts...
-    for state in optimizer.state.values():
-        for k, v in state.items():
-            if isinstance(v, torch.Tensor):
-                state[k] = v.to(device)
 
 if __name__ == '__main__':
     
@@ -190,7 +183,7 @@ if __name__ == '__main__':
         val_loss, val_accuracy = eval_training()
 
         #start to save best performance model after learning rate decay to 0.01
-        if best_acc < acc:
+        if best_acc < val_accuracy:
             # torch.save(net.state_dict(), 
             #     checkpoint_path.format(net=args.net, epoch=epoch, type='best'))
             torch.save({
