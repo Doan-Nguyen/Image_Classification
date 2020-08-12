@@ -45,11 +45,8 @@ class VGG(nn.Module):
     def forward(self, x):
         # print("X: {}".format(x.shape))
         y = x.view(x.size(0), -1)
-        print(y.shape)
         output = self.features(x) # [batch_size, D, W, H]
-        print("Output 1: {} ".format(output.shape))
         output = output.view(output.size()[0], -1)  # ()
-        print("Output 2: {} ".format(output.shape))
         output = self.classifier(output)
     
         return output
