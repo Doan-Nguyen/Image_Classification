@@ -15,7 +15,7 @@ from torchvision import models
 from torch.autograd import Variable
 
 from conf import global_settings
-from utils_ai import build_network, get_training_dataloader, get_test_dataloader, WarmUpLR, load_checkpoint
+from utils_ai import build_network, get_training_dataloader, get_test_dataloader, WarmUpLR
 import models
 
 
