@@ -56,9 +56,10 @@ def training_loop(epoch):
         loss.backward()
         optimizer.step()
 
+
         logger.info('Training Epoch: \
-            {epoch} [{trained_samples}/{total_samples}]\t \
-            Loss: {:0.4f}\tLR: {:0.6f}'.format(
+         {epoch} [{trained_samples}/{total_samples}]\t \
+         Loss: {:0.4f}\tLR: {:0.6f}'.format(
             loss.item(),
             optimizer.param_groups[0]['lr'],
             epoch=epoch,

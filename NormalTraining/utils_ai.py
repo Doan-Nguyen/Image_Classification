@@ -180,7 +180,6 @@ def compute_mean_std(stamp_dataset):
     return mean, std
 
 
-
 def get_training_dataloader(
             mean, 
             std, 
@@ -325,39 +324,39 @@ def compare_similarity(net, image_1, image_2):
 # def save_checkpoint(state, is_best, save_path, epoch, model, optimizer):
 
 
-def load_checkpoint(checkpoint_path, load_optimizer=False, gpu=True):
-    """ This function be used to load checkpoint & resume training/fine turning models
-    Parameters:
-        - model:
-        - load_optimizer (bool):
-            - True: creates an optimizer & loads state_dict. Using for SGD.
-            - False: does not create an optimzer. Using for Adam.
-        - checkpoint_path (str): checkpoint file path 
-    Returns: 
-        - model (): re-build pre-trained model
-        - optimizer(optim.Optimizer, None): optimizer if load_optimizer == True
-        - epoch (int): save epoch numb
-        - history (dict): training history
-    """
-    # if gpu:
-    device = torch.device('cuda:0')
+# def load_checkpoint(checkpoint_path, load_optimizer=False, gpu=True):
+#     """ This function be used to load checkpoint & resume training/fine turning models
+#     Parameters:
+#         - model:
+#         - load_optimizer (bool):
+#             - True: creates an optimizer & loads state_dict. Using for SGD.
+#             - False: does not create an optimzer. Using for Adam.
+#         - checkpoint_path (str): checkpoint file path 
+#     Returns: 
+#         - model (): re-build pre-trained model
+#         - optimizer(optim.Optimizer, None): optimizer if load_optimizer == True
+#         - epoch (int): save epoch numb
+#         - history (dict): training history
+#     """
+#     # if gpu:
+#     device = torch.device('cuda:0')
     
 
 
-    # checkpoint_file = 'checkpoint/vgg16-84-best.pth'
-    start_epoch = global_settings.START_EPOCH
-    if os.path.isfile(checkpoint_file):
-        print("---> Load checkpoint {}".format(checkpoint_file))
-        checkpoint = torch.load(checkpoint_file)  #??
-        start_epoch = checkpoint['epoch']
-        model.load_state_dict(checkpoint['state_dict'])
-        optimizer.load_state_dict(checkpoint['optimizer'])
-        print("=> loaded checkpoint '{}' (epoch {})"
-                  .format(filename, checkpoint['epoch']))
-    else:
-        print("=> no checkpoint found at '{}'".format(checkpoint_file))
+#     # checkpoint_file = 'checkpoint/vgg16-84-best.pth'
+#     start_epoch = global_settings.START_EPOCH
+#     if os.path.isfile(checkpoint_file):
+#         print("---> Load checkpoint {}".format(checkpoint_file))
+#         checkpoint = torch.load(checkpoint_file)  #??
+#         start_epoch = checkpoint['epoch']
+#         model.load_state_dict(checkpoint['state_dict'])
+#         optimizer.load_state_dict(checkpoint['optimizer'])
+#         print("=> loaded checkpoint '{}' (epoch {})"
+#                   .format(filename, checkpoint['epoch']))
+#     else:
+#         print("=> no checkpoint found at '{}'".format(checkpoint_file))
 
-    return model, optimizer, start_epoch
+#     return model, optimizer, start_epoch
 
 def create_training_data_for_new_author(author_name, logger):
     logger.info("Create dataset for author: ", author_name)
