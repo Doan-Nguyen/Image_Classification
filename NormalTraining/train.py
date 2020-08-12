@@ -77,8 +77,8 @@ def training_loop(epoch):
 def eval_training():
     net.eval()
 
-    val_loss = 0.0 # cost function error
-    correct = 0.0
+    val_running_loss = 0.0
+    val_running_correct = 0.0
 
     for (images, labels) in stamp_test_loader:
         images, labels = Variable(images), Variable(labels)
