@@ -99,15 +99,6 @@ def eval_training():
 
     return val_loss, val_accuracy
 
-def retrain(model_ft, optimizer):
-    ###         Initiliaze the model
-    net.cuda()
-    optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9, weight_decay=5e-4)
-
-    ###         Load checkpoint 
-    checkpoint = torch.load(global_settings.CHECKPOINT_TRANSFER)
-    net.load_state_dict(checkpoint['model_state_dict'])
-    optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
 
 
 if __name__ == '__main__':

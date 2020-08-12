@@ -38,6 +38,7 @@ TIME_NOW = datetime.now().isoformat()
 SAVE_EPOCH = 2
 # start epoch for resume training
 START_EPOCH = 101
+NEW_EPOCH = 50
 
 ### Checkpoint path 
 CHECKPOINT_TRANSFER = 'checkpoint/vgg16-84-best.pth'
