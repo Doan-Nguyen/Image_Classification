@@ -24,161 +24,142 @@ from torch.utils.data import DataLoader
 from conf import global_settings
 from imgaug import augmenters as iaa
 
-def build_network(archi = 'squeezenet', use_gpu=False, num_classes=global_settings.NUMB_CLASSES):
-    """ return given network
-    """
-
-    if archi == 'vgg16':
+def build_network(args):
+    if args.net == 'vgg16':
         from models.vgg import vgg16_bn
         net = vgg16_bn()
     ### custom network start here
-    elif archi == 'shallow_squeezenet':
+    elif args.net == 'shallow_squeezenet':
         from models.shallow_squeezenet import shallow_squeezenet
-        net = shallow_squeezenet(num_classes=num_classes)
-    elif archi == 'shallow_resnet18':
+        net = shallow_squeezenet()
+    elif args.net == 'shallow_resnet18':
         from models.shallow_resnet import shallow_resnet18
-        net = shallow_resnet18(num_classes=num_classes)
+        net = shallow_resnet18()
     ### custom network end here
     
-    elif archi == 'vgg13':
+    elif args.net == 'vgg13':
         from models.vgg import vgg13_bn
-        net = vgg13_bn(num_classes=num_classes)
-    elif archi == 'vgg11':
+        net = vgg13_bn()
+    elif args.net == 'vgg11':
         from models.vgg import vgg11_bn
-        net = vgg11_bn(num_classes=num_classes)
-    elif archi == 'vgg19':
+        net = vgg11_bn()
+    elif args.net == 'vgg19':
         from models.vgg import vgg19_bn
         net = vgg19_bn()
-    elif archi == 'densenet121':
+    elif args.net == 'densenet121':
         from models.densenet import densenet121
-        net = densenet121(num_classes=num_classes)
-    elif archi == 'densenet161':
+        net = densenet121()
+    elif args.net == 'densenet161':
         from models.densenet import densenet161
-        net = densenet161(num_classes=num_classes)
-    elif archi == 'densenet169':
+        net = densenet161()
+    elif args.net == 'densenet169':
         from models.densenet import densenet169
-        net = densenet169(num_classes=num_classes)
-    elif archi == 'densenet201':
+        net = densenet169()
+    elif args.net == 'densenet201':
         from models.densenet import densenet201
-        net = densenet201(num_classes=num_classes)
-    elif archi == 'googlenet':
+        net = densenet201()
+    elif args.net == 'googlenet':
         from models.googlenet import googlenet
-        net = googlenet(num_classes=num_classes)
-    elif archi == 'inceptionv3':
+        net = googlenet()
+    elif args.net == 'inceptionv3':
         from models.inceptionv3 import inceptionv3
-        net = inceptionv3(num_classes=num_classes)
-    elif archi == 'inceptionv4':
+        net = inceptionv3()
+    elif args.net == 'inceptionv4':
         from models.inceptionv4 import inceptionv4
-        net = inceptionv4(num_classes=num_classes)
-    elif archi == 'inceptionresnetv2':
+        net = inceptionv4()
+    elif args.net == 'inceptionresnetv2':
         from models.inceptionv4 import inception_resnet_v2
-        net = inception_resnet_v2(num_classes=num_classes)
-    elif archi == 'xception':
+        net = inception_resnet_v2()
+    elif args.net == 'xception':
         from models.xception import xception
-        net = xception(num_classes=num_classes)
-    elif archi == 'resnet18':
+        net = xception()
+    elif args.net == 'resnet18':
         from models.resnet import resnet18
-        net = resnet18(num_classes=num_classes)
-    elif archi == 'resnet34':
+        net = resnet18()
+    elif args.net == 'resnet34':
         from models.resnet import resnet34
-        net = resnet34(num_classes=num_classes)
-    elif archi == 'resnet50':
+        net = resnet34()
+    elif args.net == 'resnet50':
         from models.resnet import resnet50
-        net = resnet50(num_classes=num_classes)
-    elif archi == 'resnet101':
+        net = resnet50()
+    elif args.net == 'resnet101':
         from models.resnet import resnet101
-        net = resnet101(num_classes=num_classes)
-    elif archi == 'resnet152':
+        net = resnet101()
+    elif args.net == 'resnet152':
         from models.resnet import resnet152
-        net = resnet152(num_classes=num_classes)
-    elif archi == 'preactresnet18':
+        net = resnet152()
+    elif args.net == 'preactresnet18':
         from models.preactresnet import preactresnet18
-        net = preactresnet18(num_classes=num_classes)
-    elif archi == 'preactresnet34':
+        net = preactresnet18()
+    elif args.net == 'preactresnet34':
         from models.preactresnet import preactresnet34
-        net = preactresnet34(num_classes=num_classes)
-    elif archi == 'preactresnet50':
+        net = preactresnet34()
+    elif args.net == 'preactresnet50':
         from models.preactresnet import preactresnet50
-        net = preactresnet50(num_classes=num_classes)
-    elif archi == 'preactresnet101':
+        net = preactresnet50()
+    elif args.net == 'preactresnet101':
         from models.preactresnet import preactresnet101
-        net = preactresnet101(num_classes=num_classes)
-    elif archi == 'preactresnet152':
+        net = preactresnet101()
+    elif args.net == 'preactresnet152':
         from models.preactresnet import preactresnet152
-        net = preactresnet152(num_classes=num_classes)
-    elif archi == 'resnext50':
+        net = preactresnet152()
+    elif args.net == 'resnext50':
         from models.resnext import resnext50
-        net = resnext50(num_classes=num_classes)
-    elif archi == 'resnext101':
+        net = resnext50()
+    elif args.net == 'resnext101':
         from models.resnext import resnext101
-        net = resnext101(num_classes=num_classes)
-    elif archi == 'resnext152':
+        net = resnext101()
+    elif args.net == 'resnext152':
         from models.resnext import resnext152
-        net = resnext152(num_classes=num_classes)
-    elif archi == 'shufflenet':
+        net = resnext152()
+    elif args.net == 'shufflenet':
         from models.shufflenet import shufflenet
-        net = shufflenet(num_classes=num_classes)
-    elif archi == 'shufflenetv2':
+        net = shufflenet()
+    elif args.net == 'shufflenetv2':
         from models.shufflenetv2 import shufflenetv2
-        net = shufflenetv2(num_classes=num_classes)
-    elif archi == 'squeezenet':
+        net = shufflenetv2()
+    elif args.net == 'squeezenet':
         from models.squeezenet import squeezenet
-        net = squeezenet(num_classes=num_classes)
-    elif archi == 'mobilenet':
+        net = squeezenet()
+    elif args.net == 'mobilenet':
         from models.mobilenet import mobilenet
-        net = mobilenet(num_classes=num_classes)
-    elif archi == 'mobilenetv2':
+        net = mobilenet()
+    elif args.net == 'mobilenetv2':
         from models.mobilenetv2 import mobilenetv2
-        net = mobilenetv2(num_classes=num_classes)
-    elif archi == 'nasnet':
+        net = mobilenetv2()
+    elif args.net == 'nasnet':
         from models.nasnet import nasnet
-        net = nasnet(num_classes=num_classes)
-    elif archi == 'attention56':
+        net = nasnet()
+    elif args.net == 'attention56':
         from models.attention import attention56
-        net = attention56(num_classes=num_classes)
-    elif archi == 'attention92':
+        net = attention56()
+    elif args.net == 'attention92':
         from models.attention import attention92
-        net = attention92(num_classes=num_classes)
-    elif archi == 'seresnet18':
+        net = attention92()
+    elif args.net == 'seresnet18':
         from models.senet import seresnet18
-        net = seresnet18(num_classes=num_classes)
-    elif archi == 'seresnet34':
+        net = seresnet18()
+    elif args.net == 'seresnet34':
         from models.senet import seresnet34 
-        net = seresnet34(num_classes=num_classes)
-    elif archi == 'seresnet50':
+        net = seresnet34()
+    elif args.net == 'seresnet50':
         from models.senet import seresnet50 
-        net = seresnet50(num_classes=num_classes)
-    elif archi == 'seresnet101':
+        net = seresnet50()
+    elif args.net == 'seresnet101':
         from models.senet import seresnet101 
-        net = seresnet101(num_classes=num_classes)
-    elif archi == 'seresnet152':
+        net = seresnet101()
+    elif args.net == 'seresnet152':
         from models.senet import seresnet152
-        net = seresnet152(num_classes=num_classes)
+        net = seresnet152()
 
     else:
         print('the network name you have entered is not supported yet')
         sys.exit()
 
+    if args.gpu:
+        net = net.cuda()
+
     return net
-
-def compute_mean_std(stamp_dataset):
-    """compute the mean and std of stamp dataset
-    Args:
-        stamp_training_dataset or stamp_test_dataset
-        witch derived from class torch.utils.data
-    
-    Returns:
-        a tuple contains mean, std value of entire dataset
-    """
-
-    data_r = np.dstack([stamp_dataset[i][1][:, :, 0] for i in range(len(stamp_dataset))])
-    data_g = np.dstack([stamp_dataset[i][1][:, :, 1] for i in range(len(stamp_dataset))])
-    data_b = np.dstack([stamp_dataset[i][1][:, :, 2] for i in range(len(stamp_dataset))])
-    mean = np.mean(data_r), np.mean(data_g), np.mean(data_b)
-    std = np.std(data_r), np.std(data_g), np.std(data_b)
-
-    return mean, std
-
 
 def get_training_dataloader(
             mean, 
@@ -242,6 +223,24 @@ def get_test_dataloader(mean,
     idx_to_class = {v: k for k, v in stamp_test.class_to_idx.items()}
 
     return stamp_test_loader, idx_to_class
+
+def compute_mean_std(stamp_dataset):
+    """compute the mean and std of stamp dataset
+    Args:
+        stamp_training_dataset or stamp_test_dataset
+        witch derived from class torch.utils.data
+    
+    Returns:
+        a tuple contains mean, std value of entire dataset
+    """
+
+    data_r = np.dstack([stamp_dataset[i][1][:, :, 0] for i in range(len(stamp_dataset))])
+    data_g = np.dstack([stamp_dataset[i][1][:, :, 1] for i in range(len(stamp_dataset))])
+    data_b = np.dstack([stamp_dataset[i][1][:, :, 2] for i in range(len(stamp_dataset))])
+    mean = np.mean(data_r), np.mean(data_g), np.mean(data_b)
+    std = np.std(data_r), np.std(data_g), np.std(data_b)
+
+    return mean, std
 
 class WarmUpLR(_LRScheduler):
     """warmup_training learning rate scheduler
@@ -321,42 +320,6 @@ def compare_similarity(net, image_1, image_2):
     cos_sim = dot(feature_1, feature_2)/(norm(feature_1)*norm(feature_2))
     return cos_sim
 
-# def save_checkpoint(state, is_best, save_path, epoch, model, optimizer):
-
-
-# def load_checkpoint(checkpoint_path, load_optimizer=False, gpu=True):
-#     """ This function be used to load checkpoint & resume training/fine turning models
-#     Parameters:
-#         - model:
-#         - load_optimizer (bool):
-#             - True: creates an optimizer & loads state_dict. Using for SGD.
-#             - False: does not create an optimzer. Using for Adam.
-#         - checkpoint_path (str): checkpoint file path 
-#     Returns: 
-#         - model (): re-build pre-trained model
-#         - optimizer(optim.Optimizer, None): optimizer if load_optimizer == True
-#         - epoch (int): save epoch numb
-#         - history (dict): training history
-#     """
-#     # if gpu:
-#     device = torch.device('cuda:0')
-    
-
-
-#     # checkpoint_file = 'checkpoint/vgg16-84-best.pth'
-#     start_epoch = global_settings.START_EPOCH
-#     if os.path.isfile(checkpoint_file):
-#         print("---> Load checkpoint {}".format(checkpoint_file))
-#         checkpoint = torch.load(checkpoint_file)  #??
-#         start_epoch = checkpoint['epoch']
-#         model.load_state_dict(checkpoint['state_dict'])
-#         optimizer.load_state_dict(checkpoint['optimizer'])
-#         print("=> loaded checkpoint '{}' (epoch {})"
-#                   .format(filename, checkpoint['epoch']))
-#     else:
-#         print("=> no checkpoint found at '{}'".format(checkpoint_file))
-
-#     return model, optimizer, start_epoch
 
 def create_training_data_for_new_author(author_name, logger):
     logger.info("Create dataset for author: ", author_name)

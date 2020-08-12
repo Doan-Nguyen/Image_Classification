@@ -133,13 +133,13 @@ if __name__ == '__main__':
     )
 
     ###         Initialize the model  
-    net_type = args_dict['net']
-    use_gpu = args_dict['gpu']
-    standard_folder = global_settings.TRAIN_FOLDER
-    list_author = next(os.walk(standard_folder))[1]
-    num_classes = len(list_author)
-    net = build_network(archi=net_type, use_gpu=use_gpu, num_classes=num_classes)
-    net.cuda() 
+    net = build_network(args)
+    # net_type = args_dict['net']
+    # use_gpu = args_dict['gpu']
+    # standard_folder = global_settings.TRAIN_FOLDER
+    # list_author = next(os.walk(standard_folder))[1]
+    # num_classes = len(list_author)
+    # net = build_network(archi=net_type, use_gpu=use_gpu, num_classes=num_classes)
     
     ###         Optimizer & compute loss function
     loss_function = nn.CrossEntropyLoss()
@@ -147,15 +147,15 @@ if __name__ == '__main__':
     
     #   Log infor modularity to Pytorch models & optimizer
     for param_tensor in net.state_dict():       
-        logger.info("Param tensor: {param_tensor} \t {net.state_dict()[param_tensor].size()}")
+        logger.info(param_tensor, "\t", net.state_dict()[param_tensor].size)
     for var_name in optimizer.state_dict():
-        logger.info("{var_name} \t {optimizer.state_dict()[var_name]}")
+        logger.info(var_name, "\t", optimizer.state_dict()[var_name])
     #   
     train_scheduler = optim.lr_scheduler.MultiStepLR(optimizer, 
-                    milestones=global_settings.MILESTONES, gamma=0.2) #learning rate decay
+                milestones=global_settings.MILESTONES, gamma=0.2) #learning rate decay
     iter_per_epoch = len(stamp_training_loader)
     warmup_scheduler = WarmUpLR(optimizer, iter_per_epoch * args.warm)
-    checkpoint_path = global_settings.CHECKPOINT_PATH
+    checkpoint_path = os.path.join(global_settings.CHECKPOINT_PATH, args.net, global_settings.TIME_NOW)
     
     ###         Create checkpoint folder to save model
     if not os.path.exists(checkpoint_path):
@@ -176,8 +176,7 @@ if __name__ == '__main__':
 
         #start to save best performance model after learning rate decay to 0.01
         if best_acc < val_accuracy:
-            # torch.save(net.state_dict(), 
-            #     checkpoint_path.format(net=args.net, epoch=epoch, type='best'))
+        
             torch.save({
                 'epoch':global_settings.EPOCH,
                 'model_state_dict': net.state_dict(),
@@ -186,5 +185,4 @@ if __name__ == '__main__':
             }, checkpoint_path.format(net=args.net, epoch=epoch, type='best'))
             best_acc = val_accuracy
             logger.info("Saving at epoch: " + str(epoch) + " with accuracy: " +  str(val_accuracy))
-
-    
+            continue

@@ -15,8 +15,9 @@ from torchvision import models
 from torch.autograd import Variable
 
 from conf import global_settings
-from utils_ai import build_network, get_training_dataloader, get_test_dataloader, WarmUpLR, load_checkpoint
+from utils_ai import build_network, get_training_dataloader, get_test_dataloader, WarmUpLR
 import models
+import train
 
 
 ### Logging 
@@ -46,6 +47,7 @@ def retrain(model_ft, optimizer):
     optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
     epochs = checkpoint['epoch']
     criterion = checkpoint['loss']
+
     epochs = global_settings.NEW_EPOCH
 
 
@@ -87,19 +89,28 @@ if __name__ == '__main__':
     num_classes = len(list_author)
     net = build_network(archi=net_type, use_gpu=use_gpu, num_classes=num_classes)
     net.cuda()
+    optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9, weight_decay=5e-4)
+    ###         Load checkpoint   
+    checkpoint = torch.load('/home/doannn/Documents/Public/Image_Classification_/Image_Classification/NormalTraining/vgg16-1-best.pth', map_location=torch.device('cuda'))
+
+    net.load_state_dict(checkpoint['model_state_dict'])
+    optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+    epochs = checkpoint['epoch']
+    criterion = checkpoint['loss']
+    epochs = global_settings.NEW_EPOCH
 
 
     ###         Training 
     best_acc = 0.0
     train_loss, train_accuracy = [], []
-    for epoch in range(1, global_settings.EPOCH):
+    for epoch in range(1, global_settings.NEW_EPOCH):
         if epoch > args.warm:
             train_scheduler.step(epoch)
 
-        train_epoch_loss, train_epoch_accuracy =  training_loop(epoch)
+        train_epoch_loss, train_epoch_accuracy =  train.training_loop(epoch)
         train_loss.append(train_epoch_loss)
         train_accuracy.append(train_epoch_accuracy)
-        val_loss, val_accuracy = eval_training()
+        val_loss, val_accuracy = train.eval_training()
 
         #start to save best performance model after learning rate decay to 0.01
         if best_acc < val_accuracy:

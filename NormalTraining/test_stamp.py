@@ -6,27 +6,29 @@ print top1 and top5 err on test dataset
 of a model
 author baiyu
 """
-
+import warnings
+warnings.filterwarnings('ignore')
+import logging
+import sqlite3
+import time
 import argparse
+import os
+import time
+import json
+from PIL import Image
+
 from torchvision import datasets
 import torch
 from torchvision import transforms
 from torch.utils.data import DataLoader
 from torch.autograd import Variable
-from conf import settings
+
+import conf.global_settings as global_settings
 from utils_ai import get_test_dataloader, build_network
-import os
-from PIL import Image
 from torch import unsqueeze
-import time
-import json
 
-import warnings
-warnings.filterwarnings('ignore')
-import logging
-import sqlite3
 
-import time
+
 
 logger = logging.getLogger(__name__)
 
@@ -84,10 +86,10 @@ if __name__ == '__main__':
     device = torch.device("cuda")
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-net', type=str, default= 'squeezenet', help='net type')
+    parser.add_argument('-net', type=str, default= 'vgg16', help='net type')
     ### 
     # parser.add_argument('-weights', type=str, default='./checkpoint/results/sign_squeezenet-280-regular.pth', help='the weights file path you want to test')
-    parser.add_argument('-weights', type=str, default='./checkpoint/results/squeezenet-51-best.pth', help='the weights file path you want to test')
+    parser.add_argument('-weights', type=str, default='./vgg16-1-best.pth', help='the weights file path you want to test')
     
     parser.add_argument('-gpu', type=bool, default=True, help='use gpu or not')
     parser.add_argument('-w', type=int, default=4, help='number of workers for dataloader')
@@ -96,19 +98,28 @@ if __name__ == '__main__':
     args = parser.parse_args()
     args_dict = vars(parser.parse_args())
     logger.info(args_dict)
+
+###         Initialize the model  
     net_type = args_dict['net']
     use_gpu = args_dict['gpu']
-    
-    standard_folder = "D:/SealProjectOLD/Datasets/images/train"
+    standard_folder = global_settings.TRAIN_FOLDER
     list_author = next(os.walk(standard_folder))[1]
-    num_class = len(list_author)
-    net = build_network(archi = net_type, use_gpu=use_gpu, num_class=num_class)
+    num_classes = len(list_author)
+    net = build_network(archi=net_type, use_gpu=use_gpu, num_classes=num_classes)
+    net.cuda() 
+
+    # net_type = args_dict['net']
+    # use_gpu = args_dict['gpu']
+    # standard_folder = global_settings.TRAIN_FOLDER
+    # list_author = next(os.walk(standard_folder))[1]
+    # num_class = len(list_author)
+    # net = build_network(archi = net_type, use_gpu=use_gpu)  # , num_class=num_class
     logger.info(net)
     
     net.load_state_dict(torch.load(args.weights), args.gpu)
     net.eval()
 
-    test_image_dir = 'D:/SealProjectOLD/Datasets/images/val'
+    test_image_dir = global_settings.TEST_FOLDER
 
     ###
     sum_acc_average = 0
